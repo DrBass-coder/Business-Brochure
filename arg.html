@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARG Business Brochure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @media print {
+      body {
+        width: 148mm;
+        height: 210mm;
+        margin: 0;
+      }
+    }
+
+    body {
+      font-family: 'Times New Roman', sans-serif;
+      width: 148mm;
+      height: 210mm;
+      margin: auto;
+      padding: 20px;
+      color: #333;
+    }
+
+    .brochure {
+      border-radius: 15px;
+      background: url();
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #050b0f;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #406882;
+      border-bottom: 2px solid #1a374d;
+      padding-bottom: 5px;
+      margin-top: 25px;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style: square;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      background: #1a374d;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .highlight {
+      color: #ffd700;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #6c757d;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      font-size: 16px;
+      margin-right: 6px;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <div class="brochure">
+    <h1>ARG – Reliable. Professional. Affordable.</h1>
+    <p class="tagline">Specialists in CCTV Installations & Appliance Repairs</p>
+
+    <div class="section">
+      <h2>🔒 CCTV Installations & Services</h2>
+      <ul>
+        <li>Home & Business CCTV Solutions</li>
+        <li>HD & Night Vision Camera Installations</li>
+        <li>Remote Monitoring Setup</li>
+        <li>System Repairs & Maintenance</li>
+        <li>Annual Servicing Contracts</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🔧 Appliance Repairs & Servicing</h2>
+      <ul>
+        <li>Fridges, Freezers, Microwaves</li>
+        <li>Washing Machines & Tumble Dryers</li>
+        <li>Stoves, Ovens & Small Appliances</li>
+        <li>Fault Finding & Diagnostics</li>
+        <li>Preventative Maintenance Packages</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>📞 Contact ARG Today</h2>
+      <p><span class="icon">📱</span><span class="highlight">081 234 5678</span></p>
+      <p><span class="icon">📧</span><span class="highlight">info@argservices.co.za</span></p>
+      <p><span class="icon">🌐</span><span class="highlight">www.argservices.co.za</span></p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll(".highlight").forEach(el => {
+      el.addEventListener("mouseover", () => {
+        el.style.textShadow = "0 0 5px gold";
+      });
+      el.addEventListener("mouseout", () => {
+        el.style.textShadow = "none";
+      });
+    });
+  </script>
+</body>
+</html>
